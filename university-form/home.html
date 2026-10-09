@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Registration-Form</title>
+  </head>
+  <body>
+    <section>
+      <div class="FormBox">
+        <h1>Student Registration form</h1>
+        <p>Fill in this form to register.</p>
+
+        <form id="regForm" novalidate>
+          <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>First Name:</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Enter your first name"
+            />
+            <span class="error" id="firstNameError"></span>
+
+            <label>Last Name:</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Enter your Last name"
+            />
+            <span class="error" id="lastNameError"></span>
+
+            <label>Date of Birth:</label>
+            <input type="date" id="dob" />
+            <span class="error" id="dobError"></span>
+
+            <label>ID number / Passport Number:</label>
+            <input type="text" id="idNumber" placeholder="ID or Passport" />
+            <span class="error" id="idNumberError"></span>
+
+            <label>Email address:</label>
+            <input type="email" id="email" placeholder="applyhere@gmail.com" />
+            <span class="error" id="emailError"></span>
+
+            <label>Phone number:</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="0718846311"
+              maxlength="10"
+            />
+            <span class="error" id="phoneError"></span>
+
+            <label>Gender:</label>
+            <select id="gender">
+              <option value="">--Select Gender--</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+            <span class="error" id="genderError"></span>
+
+            <label>Province:</label>
+            <select id="province">
+              <option value="">--Select Province--</option>
+              <option>Gauteng</option>
+              <option>North West</option>
+              <option>Free State</option>
+              <option>Limpopo</option>
+              <option>Mpumalanga</option>
+              <option>Western cape</option>
+              <option>Northern Cape</option>
+              <option>KwaZulu Natal</option>
+              <option>Eastern Cape</option>
+            </select>
+            <span class="error" id="provinceError"></span>
+
+            <label>Race:</label>
+            <select id="race">
+              <option value="">--Select Race--</option>
+              <option>African</option>
+              <option>White</option>
+              <option>Coloured</option>
+              <option>Indian</option>
+              <option>Other</option>
+            </select>
+            <span class="error" id="raceError"></span>
+
+            <label>Home language:</label>
+            <input type="text" id="language" placeholder="Zulu, English, etc" />
+            <span class="error" id="languageError"></span>
+          </fieldset>
+
+          <fieldset>
+            <legend>Academic Details</legend>
+
+            <label>Faculty / Department:</label>
+            <input type="text" id="faculty" placeholder="eg engineering, IT" />
+            <span class="error" id="facultyError"></span>
+
+            <label>Year graduated (matric):</label>
+            <input type="text" id="matricYear" placeholder="2026" />
+            <span class="error" id="matricYearError"></span>
+
+            <label>Pass type:</label>
+            <select id="passType">
+              <option value="">--Select Pass Type--</option>
+              <option>Bachelor</option>
+              <option>Diploma</option>
+              <option>Higher Certificate</option>
+            </select>
+            <span class="error" id="passTypeError"></span>
+
+            <button class="submitbtn" type="submit">Submit</button>
+            <p id="successMsg">✅ Registration Successful!</p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <script src="home.js"></script>
+  </body>
+</html>
